@@ -23,4 +23,6 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	FVector StartPoint = FVector(0, 0, 0);
 };

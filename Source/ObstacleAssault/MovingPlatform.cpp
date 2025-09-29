@@ -15,8 +15,8 @@ AMovingPlatform::AMovingPlatform()
 void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	UE_LOG(LogTemp, Warning, TEXT("Moving Platform Begin Play"));
+
+	SetActorLocation(StartPoint);
 }
 
 // Called every frame
