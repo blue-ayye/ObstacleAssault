@@ -16,7 +16,7 @@ void AMovingPlatform::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	UE_LOG(LogAudioDebug, Warning, TEXT("Moving Platform Begin Play"));
+	UE_LOG(LogTemp, Warning, TEXT("Moving Platform Begin Play"));
 }
 
 // Called every frame
