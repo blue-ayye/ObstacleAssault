@@ -25,4 +25,7 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Movement")
 	FVector StartPoint = FVector(0, 0, 0);
+
+	UPROPERTY(EditAnywhere, Category = "Movement")
+	FVector Velocity = FVector(100, 0, 0);
 };
