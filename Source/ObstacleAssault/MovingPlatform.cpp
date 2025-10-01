@@ -46,9 +46,7 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 
 void AMovingPlatform::RotatePlatform(float DeltaTime)
 {
-	FRotator CurrentRotation = GetActorRotation();
-	CurrentRotation.Add(0.f, 10.0f * DeltaTime, 0.f);
-	SetActorRotation(CurrentRotation);
+	AddActorLocalRotation(RotationVelocity * DeltaTime);
 }
 
 float AMovingPlatform::GetDistanceMoved() const

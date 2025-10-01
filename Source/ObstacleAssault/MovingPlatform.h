@@ -35,4 +35,7 @@ public:
 
 	UPROPERTY(EditAnywhere)
 	float MoveDistance = 500.f;
+
+	UPROPERTY(EditAnywhere)
+	FRotator RotationVelocity = FRotator(0, 0, 10.f);
 };
